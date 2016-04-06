@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareConnectApiClient.V2", "SquareConnectApiClient.V2\SquareConnectApiClient.V2.csproj", "{73953BAF-A925-4DD2-8409-8C95F299CBD0}"
 EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "SquareConnectApiClient.NuGet", "SquareConnectApiClient.NuGet\SquareConnectApiClient.NuGet.nuproj", "{2CCA8810-6D85-48C8-AFBF-DB2346871933}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{73953BAF-A925-4DD2-8409-8C95F299CBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73953BAF-A925-4DD2-8409-8C95F299CBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73953BAF-A925-4DD2-8409-8C95F299CBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
