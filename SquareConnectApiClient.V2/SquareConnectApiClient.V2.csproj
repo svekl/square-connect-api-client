@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73953BAF-A925-4DD2-8409-8C95F299CBD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SquareConnectApiClient.V2</RootNamespace>
+    <AssemblyName>SquareConnectApiClient.V2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp.Newtonsoft.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.Newtonsoft.Json.1.0.0\lib\net45\RestSharp.Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\CustomerApi.cs" />
+    <Compile Include="Api\CustomerCardApi.cs" />
+    <Compile Include="Api\LocationApi.cs" />
+    <Compile Include="Api\RefundApi.cs" />
+    <Compile Include="Api\TransactionApi.cs" />
+    <Compile Include="Client\ApiClient.cs" />
+    <Compile Include="Client\ApiException.cs" />
+    <Compile Include="Client\ApiResponse.cs" />
+    <Compile Include="Client\Configuration.cs" />
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\CaptureTransactionResponse.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\CardBrand.cs" />
+    <Compile Include="Model\ChargeRequest.cs" />
+    <Compile Include="Model\ChargeResponse.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\CreateCustomerCardRequest.cs" />
+    <Compile Include="Model\CreateCustomerCardResponse.cs" />
+    <Compile Include="Model\CreateCustomerRequest.cs" />
+    <Compile Include="Model\CreateCustomerResponse.cs" />
+    <Compile Include="Model\CreateRefundRequest.cs" />
+    <Compile Include="Model\CreateRefundResponse.cs" />
+    <Compile Include="Model\Currency.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\DeleteCustomerCardResponse.cs" />
+    <Compile Include="Model\DeleteCustomerResponse.cs" />
+    <Compile Include="Model\Error.cs" />
+    <Compile Include="Model\ErrorCategory.cs" />
+    <Compile Include="Model\ErrorCode.cs" />
+    <Compile Include="Model\ListCustomersRequest.cs" />
+    <Compile Include="Model\ListCustomersResponse.cs" />
+    <Compile Include="Model\ListLocationsResponse.cs" />
+    <Compile Include="Model\ListRefundsRequest.cs" />
+    <Compile Include="Model\ListRefundsResponse.cs" />
+    <Compile Include="Model\ListTransactionsRequest.cs" />
+    <Compile Include="Model\ListTransactionsResponse.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\LocationCapability.cs" />
+    <Compile Include="Model\Money.cs" />
+    <Compile Include="Model\Refund.cs" />
+    <Compile Include="Model\RefundStatus.cs" />
+    <Compile Include="Model\RetrieveCustomerResponse.cs" />
+    <Compile Include="Model\RetrieveTransactionResponse.cs" />
+    <Compile Include="Model\SortOrder.cs" />
+    <Compile Include="Model\Tender.cs" />
+    <Compile Include="Model\TenderCardDetails.cs" />
+    <Compile Include="Model\TenderCardDetailsEntryMethod.cs" />
+    <Compile Include="Model\TenderCardDetailsStatus.cs" />
+    <Compile Include="Model\TenderCashDetails.cs" />
+    <Compile Include="Model\TenderType.cs" />
+    <Compile Include="Model\Transaction.cs" />
+    <Compile Include="Model\TransactionProduct.cs" />
+    <Compile Include="Model\UpdateCustomerRequest.cs" />
+    <Compile Include="Model\UpdateCustomerResponse.cs" />
+    <Compile Include="Model\VoidTransactionResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
