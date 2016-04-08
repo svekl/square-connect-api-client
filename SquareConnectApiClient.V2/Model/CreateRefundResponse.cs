@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the fields that are included in the response body of\na request to the **CreateRefund** endpoint.\n\nOne of `errors` or `refund` is present in a given response (never both).
     /// </summary>
     [DataContract]
-    public partial class CreateRefundResponse :  IEquatable<CreateRefundResponse>
+    public class CreateRefundResponse :  IEquatable<CreateRefundResponse>
     { 
     
         /// <summary>

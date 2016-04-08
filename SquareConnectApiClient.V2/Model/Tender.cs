@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Represents a form of tender used to pay in a transaction.
     /// </summary>
     [DataContract]
-    public partial class Tender :  IEquatable<Tender>
+    public class Tender :  IEquatable<Tender>
     { 
     
         /// <summary>

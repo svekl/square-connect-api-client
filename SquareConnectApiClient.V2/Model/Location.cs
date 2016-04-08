@@ -12,7 +12,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Represents one of a business&#39;s locations.
     /// </summary>
     [DataContract]
-    public partial class Location :  IEquatable<Location>
+    public class Location :  IEquatable<Location>
     {
         [JsonConverter(typeof(StringEnumConverter))]
         public enum CapabilitiesEnum

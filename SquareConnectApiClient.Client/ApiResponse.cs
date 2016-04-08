@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SquareConnectApiClient.V2.Client
+namespace SquareConnectApiClient.Client
 {
     /// <summary>
     /// API Response

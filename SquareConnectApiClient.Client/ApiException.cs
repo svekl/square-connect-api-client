@@ -1,6 +1,6 @@
 using System;
 
-namespace SquareConnectApiClient.V2.Client
+namespace SquareConnectApiClient.Client
 {
     /// <summary>
     /// API Exception

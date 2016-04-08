@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class SortOrder :  IEquatable<SortOrder>
+    public class SortOrder :  IEquatable<SortOrder>
     { 
     
         /// <summary>

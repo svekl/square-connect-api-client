@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the fields that are included in the response body of\na request to the **ListCustomers** endpoint.\n\nOne of `errors` or `customers` is present in a given response (never both).
     /// </summary>
     [DataContract]
-    public partial class ListCustomersResponse :  IEquatable<ListCustomersResponse>
+    public class ListCustomersResponse :  IEquatable<ListCustomersResponse>
     { 
     
         /// <summary>

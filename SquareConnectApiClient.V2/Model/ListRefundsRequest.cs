@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the query parameters that can be included in\na request to the **ListRefunds** endpoint.
     /// </summary>
     [DataContract]
-    public partial class ListRefundsRequest :  IEquatable<ListRefundsRequest>
+    public class ListRefundsRequest :  IEquatable<ListRefundsRequest>
     { 
     
         /// <summary>

@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Represents the details of a credit card tender.
     /// </summary>
     [DataContract]
-    public partial class TenderCardDetails :  IEquatable<TenderCardDetails>
+    public class TenderCardDetails :  IEquatable<TenderCardDetails>
     { 
     
         /// <summary>

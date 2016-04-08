@@ -12,7 +12,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Represents a transaction processed with Square, either with the\nConnect API or with Square Register.
     /// </summary>
     [DataContract]
-    public partial class Transaction :  IEquatable<Transaction>
+    public class Transaction :  IEquatable<Transaction>
     { 
     
         /// <summary>

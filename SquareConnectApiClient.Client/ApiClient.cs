@@ -10,7 +10,7 @@ using RestSharp;
 using RestSharp.Newtonsoft.Json;
 using RestRequest = RestSharp.RestRequest;
 
-namespace SquareConnectApiClient.V2.Client
+namespace SquareConnectApiClient.Client
 {
     /// <summary>
     /// API client is mainly responible for making the HTTP call to the API backend.

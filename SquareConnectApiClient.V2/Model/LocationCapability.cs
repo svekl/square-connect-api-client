@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class LocationCapability :  IEquatable<LocationCapability>
+    public class LocationCapability :  IEquatable<LocationCapability>
     { 
     
         /// <summary>

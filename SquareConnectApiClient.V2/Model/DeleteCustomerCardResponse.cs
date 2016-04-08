@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the fields that are included in the response body of\na request to the **DeleteCustomerCard** endpoint.
     /// </summary>
     [DataContract]
-    public partial class DeleteCustomerCardResponse :  IEquatable<DeleteCustomerCardResponse>
+    public class DeleteCustomerCardResponse :  IEquatable<DeleteCustomerCardResponse>
     { 
     
         /// <summary>

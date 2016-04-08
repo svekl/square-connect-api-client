@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareConnectApiClient.V2",
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "SquareConnectApiClient.NuGet", "SquareConnectApiClient.NuGet\SquareConnectApiClient.NuGet.nuproj", "{2CCA8810-6D85-48C8-AFBF-DB2346871933}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareConnectApiClient.Client", "SquareConnectApiClient.Client\SquareConnectApiClient.Client.csproj", "{C5E1B5D8-6284-4920-BD19-4B78956A6FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareConnectApiClient.V1", "SquareConnectApiClient.V1\SquareConnectApiClient.V1.csproj", "{8AD101C7-A36B-4672-B451-56D524913965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CCA8810-6D85-48C8-AFBF-DB2346871933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E1B5D8-6284-4920-BD19-4B78956A6FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E1B5D8-6284-4920-BD19-4B78956A6FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E1B5D8-6284-4920-BD19-4B78956A6FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E1B5D8-6284-4920-BD19-4B78956A6FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD101C7-A36B-4672-B451-56D524913965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD101C7-A36B-4672-B451-56D524913965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD101C7-A36B-4672-B451-56D524913965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD101C7-A36B-4672-B451-56D524913965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

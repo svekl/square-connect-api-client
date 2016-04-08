@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the fields that are included in the response body of\na request to the **CaptureTransaction** endpoint.
     /// </summary>
     [DataContract]
-    public partial class VoidTransactionResponse :  IEquatable<VoidTransactionResponse>
+    public class VoidTransactionResponse :  IEquatable<VoidTransactionResponse>
     { 
     
         /// <summary>

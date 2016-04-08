@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the parameters that can be included in the body of\na request to the **Charge** endpoint.
     /// </summary>
     [DataContract]
-    public partial class ChargeRequest :  IEquatable<ChargeRequest>
+    public class ChargeRequest :  IEquatable<ChargeRequest>
     { 
     
         /// <summary>

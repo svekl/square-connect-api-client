@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class RefundStatus :  IEquatable<RefundStatus>
+    public class RefundStatus :  IEquatable<RefundStatus>
     { 
     
         /// <summary>

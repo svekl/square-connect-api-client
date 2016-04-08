@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class CardBrand :  IEquatable<CardBrand>
+    public class CardBrand :  IEquatable<CardBrand>
     { 
     
         /// <summary>

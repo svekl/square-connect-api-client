@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class Country :  IEquatable<Country>
+    public class Country :  IEquatable<Country>
     { 
     
         /// <summary>

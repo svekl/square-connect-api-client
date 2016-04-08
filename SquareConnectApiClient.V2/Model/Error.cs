@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class Error :  IEquatable<Error>
+    public class Error :  IEquatable<Error>
     { 
     
         /// <summary>

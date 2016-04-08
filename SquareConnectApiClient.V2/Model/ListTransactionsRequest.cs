@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the query parameters that can be included in\na request to the **ListTransactions** endpoint.
     /// </summary>
     [DataContract]
-    public partial class ListTransactionsRequest :  IEquatable<ListTransactionsRequest>
+    public class ListTransactionsRequest :  IEquatable<ListTransactionsRequest>
     { 
     
         /// <summary>

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{73953BAF-A925-4DD2-8409-8C95F299CBD0}</ProjectGuid>
+    <ProjectGuid>{8AD101C7-A36B-4672-B451-56D524913965}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SquareConnectApiClient.V2</RootNamespace>
-    <AssemblyName>SquareConnectApiClient.V2</AssemblyName>
+    <RootNamespace>SquareConnectApiClient.V1</RootNamespace>
+    <AssemblyName>SquareConnectApiClient.V1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,57 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\CustomerApi.cs" />
-    <Compile Include="Api\CustomerCardApi.cs" />
-    <Compile Include="Api\LocationApi.cs" />
-    <Compile Include="Api\RefundApi.cs" />
-    <Compile Include="Api\TransactionApi.cs" />
-    <Compile Include="Model\Address.cs" />
-    <Compile Include="Model\CaptureTransactionResponse.cs" />
-    <Compile Include="Model\Card.cs" />
-    <Compile Include="Model\CardBrand.cs" />
-    <Compile Include="Model\ChargeRequest.cs" />
-    <Compile Include="Model\ChargeResponse.cs" />
-    <Compile Include="Model\Country.cs" />
-    <Compile Include="Model\CreateCustomerCardRequest.cs" />
-    <Compile Include="Model\CreateCustomerCardResponse.cs" />
-    <Compile Include="Model\CreateCustomerRequest.cs" />
-    <Compile Include="Model\CreateCustomerResponse.cs" />
-    <Compile Include="Model\CreateRefundRequest.cs" />
-    <Compile Include="Model\CreateRefundResponse.cs" />
-    <Compile Include="Model\Currency.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\DeleteCustomerCardResponse.cs" />
-    <Compile Include="Model\DeleteCustomerResponse.cs" />
-    <Compile Include="Model\Error.cs" />
-    <Compile Include="Model\ErrorCategory.cs" />
-    <Compile Include="Model\ErrorCode.cs" />
-    <Compile Include="Model\ListCustomersRequest.cs" />
-    <Compile Include="Model\ListCustomersResponse.cs" />
-    <Compile Include="Model\ListLocationsResponse.cs" />
-    <Compile Include="Model\ListRefundsRequest.cs" />
-    <Compile Include="Model\ListRefundsResponse.cs" />
-    <Compile Include="Model\ListTransactionsRequest.cs" />
-    <Compile Include="Model\ListTransactionsResponse.cs" />
-    <Compile Include="Model\Location.cs" />
-    <Compile Include="Model\LocationCapability.cs" />
-    <Compile Include="Model\Money.cs" />
-    <Compile Include="Model\Refund.cs" />
-    <Compile Include="Model\RefundStatus.cs" />
-    <Compile Include="Model\RetrieveCustomerResponse.cs" />
-    <Compile Include="Model\RetrieveTransactionResponse.cs" />
-    <Compile Include="Model\SortOrder.cs" />
-    <Compile Include="Model\Tender.cs" />
-    <Compile Include="Model\TenderCardDetails.cs" />
-    <Compile Include="Model\TenderCardDetailsEntryMethod.cs" />
-    <Compile Include="Model\TenderCardDetailsStatus.cs" />
-    <Compile Include="Model\TenderCashDetails.cs" />
-    <Compile Include="Model\TenderType.cs" />
-    <Compile Include="Model\Transaction.cs" />
-    <Compile Include="Model\TransactionProduct.cs" />
-    <Compile Include="Model\UpdateCustomerRequest.cs" />
-    <Compile Include="Model\UpdateCustomerResponse.cs" />
-    <Compile Include="Model\VoidTransactionResponse.cs" />
+    <Compile Include="Api\AuthorizationApi.cs" />
+    <Compile Include="Model\ObtainTokenRequest.cs" />
+    <Compile Include="Model\RenewTokenResponse.cs" />
+    <Compile Include="Model\ObtainTokenResponse.cs" />
+    <Compile Include="Model\RenewTokenRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +66,7 @@
       <Name>SquareConnectApiClient.Client</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

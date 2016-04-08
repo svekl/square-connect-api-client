@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// The method used to read the card
     /// </summary>
     [DataContract]
-    public partial class TenderCardDetailsEntryMethod :  IEquatable<TenderCardDetailsEntryMethod>
+    public class TenderCardDetailsEntryMethod :  IEquatable<TenderCardDetailsEntryMethod>
     { 
     
         /// <summary>

@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the body parameters that can be included in\na request to the **CreateRefund** endpoint.
     /// </summary>
     [DataContract]
-    public partial class CreateRefundRequest :  IEquatable<CreateRefundRequest>
+    public class CreateRefundRequest :  IEquatable<CreateRefundRequest>
     { 
     
         /// <summary>

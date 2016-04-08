@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class UpdateCustomerRequest :  IEquatable<UpdateCustomerRequest>
+    public class UpdateCustomerRequest :  IEquatable<UpdateCustomerRequest>
     { 
     
         /// <summary>

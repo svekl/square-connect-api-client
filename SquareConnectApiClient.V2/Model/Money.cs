@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class Money :  IEquatable<Money>
+    public class Money :  IEquatable<Money>
     { 
     
         /// <summary>

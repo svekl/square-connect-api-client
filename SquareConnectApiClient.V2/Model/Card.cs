@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Represents a credit card.
     /// </summary>
     [DataContract]
-    public partial class Card :  IEquatable<Card>
+    public class Card :  IEquatable<Card>
     { 
     
         /// <summary>

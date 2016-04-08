@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class TenderType :  IEquatable<TenderType>
+    public class TenderType :  IEquatable<TenderType>
     { 
     
         /// <summary>

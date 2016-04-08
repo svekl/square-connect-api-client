@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SquareConnectApiClient.V2")]
+[assembly: AssemblyTitle("SquareConnectApiClient.V1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SquareConnectApiClient.V2")]
+[assembly: AssemblyProduct("SquareConnectApiClient.V1")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("73953baf-a925-4dd2-8409-8c95f299cbd0")]
+[assembly: Guid("8ad101c7-a36b-4672-b451-56d524913965")]
 
 // Version information for an assembly consists of the following four values:
 //

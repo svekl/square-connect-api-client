@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class ErrorCategory :  IEquatable<ErrorCategory>
+    public class ErrorCategory :  IEquatable<ErrorCategory>
     { 
     
         /// <summary>

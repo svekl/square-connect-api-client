@@ -10,7 +10,7 @@ namespace SquareConnectApiClient.V2.Model
     /// 
     /// </summary>
     [DataContract]
-    public partial class Address :  IEquatable<Address>
+    public class Address :  IEquatable<Address>
     { 
     
         /// <summary>

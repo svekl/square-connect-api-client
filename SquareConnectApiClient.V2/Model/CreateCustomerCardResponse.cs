@@ -11,7 +11,7 @@ namespace SquareConnectApiClient.V2.Model
     /// Defines the fields that are included in the response body of\na request to the **CreateCustomerCard** endpoint.\n\nOne of `errors` or `card` is present in a given response (never both).
     /// </summary>
     [DataContract]
-    public partial class CreateCustomerCardResponse :  IEquatable<CreateCustomerCardResponse>
+    public class CreateCustomerCardResponse :  IEquatable<CreateCustomerCardResponse>
     { 
     
         /// <summary>

@@ -9,7 +9,7 @@ namespace SquareConnectApiClient.V2.Model
     /// The name of the product used to accept payment for this transaction
     /// </summary>
     [DataContract]
-    public partial class TransactionProduct :  IEquatable<TransactionProduct>
+    public class TransactionProduct :  IEquatable<TransactionProduct>
     { 
     
         /// <summary>

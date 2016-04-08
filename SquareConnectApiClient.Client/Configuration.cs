@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace SquareConnectApiClient.V2.Client
+namespace SquareConnectApiClient.Client
 {
     /// <summary>
     /// Represents a set of configuration settings

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using RestSharp;
-using SquareConnectApiClient.V2.Client;
+using SquareConnectApiClient.Client;
 using SquareConnectApiClient.V2.Model;
 
 namespace SquareConnectApiClient.V2.Api
