@@ -30,7 +30,7 @@
     <LicenseUrl>
     </LicenseUrl>
     <Copyright>Copyright © Sergei Svekolnikov</Copyright>
-    <Tags>Square Connect</Tags>
+    <Tags>Square</Tags>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\SquareConnectApiClient.V1\SquareConnectApiClient.V1.csproj" />
