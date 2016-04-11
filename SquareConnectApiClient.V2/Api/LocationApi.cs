@@ -21,7 +21,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Provides summary information for all of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>ListLocationsResponse</returns>
         ListLocationsResponse ListLocations (string authorization);
@@ -32,7 +32,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Provides summary information for all of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>ApiResponse of ListLocationsResponse</returns>
         ApiResponse<ListLocationsResponse> ListLocationsWithHttpInfo (string authorization);
@@ -47,7 +47,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Provides summary information for all of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>Task of ListLocationsResponse</returns>
         System.Threading.Tasks.Task<ListLocationsResponse> ListLocationsAsync (string authorization);
@@ -58,7 +58,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Provides summary information for all of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>Task of ApiResponse (ListLocationsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ListLocationsResponse>> ListLocationsAsyncWithHttpInfo (string authorization);
@@ -158,7 +158,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListLocations Provides summary information for all of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <returns>ListLocationsResponse</returns>
         public ListLocationsResponse ListLocations (string authorization)
@@ -170,7 +170,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListLocations Provides summary information for all of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <returns>ApiResponse of ListLocationsResponse</returns>
         public ApiResponse< ListLocationsResponse > ListLocationsWithHttpInfo (string authorization)
@@ -178,7 +178,7 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling LocationApi->ListLocations");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling LocationApi->ListLocations");
             
     
             var localVarPath = "/v2/locations";
@@ -224,9 +224,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<ListLocationsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -238,7 +238,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListLocations Provides summary information for all of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>Task of ListLocationsResponse</returns>
         public async System.Threading.Tasks.Task<ListLocationsResponse> ListLocationsAsync (string authorization)
@@ -251,13 +251,13 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListLocations Provides summary information for all of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <returns>Task of ApiResponse (ListLocationsResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ListLocationsResponse>> ListLocationsAsyncWithHttpInfo (string authorization)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling ListLocations");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling ListLocations");
             
     
             var localVarPath = "/v2/locations";
@@ -303,9 +303,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListLocations: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<ListLocationsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),

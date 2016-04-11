@@ -19,13 +19,13 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>SquareConnectApiClient</Id>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <Title>Square Connect API Client</Title>
     <Authors>Sergei Svekolnikov</Authors>
     <Owners>Sergei Svekolnikov</Owners>
     <Summary>Client for Square Connect API</Summary>
     <Description>Client for Square Connect API. Generated with https://generator.swagger.io</Description>
-    <ReleaseNotes>Target framework changed to 4.5</ReleaseNotes>
+    <ReleaseNotes>Fixed error message formatting</ReleaseNotes>
     <ProjectUrl>https://github.com/svekl/square-connect-api-client</ProjectUrl>
     <LicenseUrl>
     </LicenseUrl>

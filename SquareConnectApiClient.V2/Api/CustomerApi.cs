@@ -21,7 +21,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Creates a new customer for the business, which can have associated cards on file.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>CreateCustomerResponse</returns>
@@ -33,7 +33,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Creates a new customer for the business, which can have associated cards on file.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>ApiResponse of CreateCustomerResponse</returns>
@@ -45,7 +45,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Deletes a customer from a business.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>DeleteCustomerResponse</returns>
@@ -57,7 +57,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Deletes a customer from a business.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>ApiResponse of DeleteCustomerResponse</returns>
@@ -69,7 +69,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists a business&#39;s customers.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>ListCustomersResponse</returns>
@@ -81,7 +81,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists a business&#39;s customers.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>ApiResponse of ListCustomersResponse</returns>
@@ -93,7 +93,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Returns details for a single customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>RetrieveCustomerResponse</returns>
@@ -105,7 +105,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Returns details for a single customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>ApiResponse of RetrieveCustomerResponse</returns>
@@ -117,7 +117,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Updates the details of an existing customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -130,7 +130,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Updates the details of an existing customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -147,7 +147,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Creates a new customer for the business, which can have associated cards on file.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>Task of CreateCustomerResponse</returns>
@@ -159,7 +159,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Creates a new customer for the business, which can have associated cards on file.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>Task of ApiResponse (CreateCustomerResponse)</returns>
@@ -171,7 +171,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Deletes a customer from a business.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of DeleteCustomerResponse</returns>
@@ -183,7 +183,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Deletes a customer from a business.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of ApiResponse (DeleteCustomerResponse)</returns>
@@ -195,7 +195,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists a business&#39;s customers.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>Task of ListCustomersResponse</returns>
@@ -207,7 +207,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists a business&#39;s customers.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>Task of ApiResponse (ListCustomersResponse)</returns>
@@ -219,7 +219,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Returns details for a single customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of RetrieveCustomerResponse</returns>
@@ -231,7 +231,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Returns details for a single customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of ApiResponse (RetrieveCustomerResponse)</returns>
@@ -243,7 +243,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Updates the details of an existing customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -256,7 +256,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Updates the details of an existing customer.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -358,7 +358,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateCustomer Creates a new customer for the business, which can have associated cards on file.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
         /// <returns>CreateCustomerResponse</returns>
@@ -371,7 +371,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateCustomer Creates a new customer for the business, which can have associated cards on file.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
         /// <returns>ApiResponse of CreateCustomerResponse</returns>
@@ -380,11 +380,11 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CustomerApi->CreateCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CustomerApi->CreateCustomer");
             
             // verify the required parameter 'body' is set
             if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling CustomerApi->CreateCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'body' when calling CustomerApi->CreateCustomer");
             
     
             var localVarPath = "/v2/customers";
@@ -437,9 +437,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<CreateCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -451,7 +451,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateCustomer Creates a new customer for the business, which can have associated cards on file.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>Task of CreateCustomerResponse</returns>
@@ -465,16 +465,16 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateCustomer Creates a new customer for the business, which can have associated cards on file.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
         /// <returns>Task of ApiResponse (CreateCustomerResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<CreateCustomerResponse>> CreateCustomerAsyncWithHttpInfo (string authorization, CreateCustomerRequest body)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling CreateCustomer");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CreateCustomer");
             // verify the required parameter 'body' is set
-            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling CreateCustomer");
+            if (body == null) throw new ApiV2Exception(400, "Missing required parameter 'body' when calling CreateCustomer");
             
     
             var localVarPath = "/v2/customers";
@@ -527,9 +527,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<CreateCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -540,7 +540,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// DeleteCustomer Deletes a customer from a business.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId"></param> 
         /// <returns>DeleteCustomerResponse</returns>
@@ -553,7 +553,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// DeleteCustomer Deletes a customer from a business.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId"></param> 
         /// <returns>ApiResponse of DeleteCustomerResponse</returns>
@@ -562,11 +562,11 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CustomerApi->DeleteCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CustomerApi->DeleteCustomer");
             
             // verify the required parameter 'customerId' is set
             if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->DeleteCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling CustomerApi->DeleteCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -613,9 +613,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<DeleteCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -627,7 +627,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// DeleteCustomer Deletes a customer from a business.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of DeleteCustomerResponse</returns>
@@ -641,16 +641,16 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// DeleteCustomer Deletes a customer from a business.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of ApiResponse (DeleteCustomerResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<DeleteCustomerResponse>> DeleteCustomerAsyncWithHttpInfo (string authorization, string customerId)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling DeleteCustomer");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling DeleteCustomer");
             // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling DeleteCustomer");
+            if (customerId == null) throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling DeleteCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -697,9 +697,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling DeleteCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<DeleteCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -710,7 +710,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListCustomers Lists a business&#39;s customers.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="cursor"> (optional)</param> 
         /// <returns>ListCustomersResponse</returns>
@@ -723,7 +723,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListCustomers Lists a business&#39;s customers.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="cursor"> (optional)</param> 
         /// <returns>ApiResponse of ListCustomersResponse</returns>
@@ -732,7 +732,7 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CustomerApi->ListCustomers");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CustomerApi->ListCustomers");
             
     
             var localVarPath = "/v2/customers";
@@ -779,9 +779,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<ListCustomersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -793,7 +793,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListCustomers Lists a business&#39;s customers.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>Task of ListCustomersResponse</returns>
@@ -807,14 +807,14 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListCustomers Lists a business&#39;s customers.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="cursor"> (optional)</param>
         /// <returns>Task of ApiResponse (ListCustomersResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ListCustomersResponse>> ListCustomersAsyncWithHttpInfo (string authorization, string cursor = null)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling ListCustomers");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling ListCustomers");
             
     
             var localVarPath = "/v2/customers";
@@ -861,9 +861,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListCustomers: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<ListCustomersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -874,7 +874,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveCustomer Returns details for a single customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId"></param> 
         /// <returns>RetrieveCustomerResponse</returns>
@@ -887,7 +887,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveCustomer Returns details for a single customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId"></param> 
         /// <returns>ApiResponse of RetrieveCustomerResponse</returns>
@@ -896,11 +896,11 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CustomerApi->RetrieveCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CustomerApi->RetrieveCustomer");
             
             // verify the required parameter 'customerId' is set
             if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->RetrieveCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling CustomerApi->RetrieveCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -947,9 +947,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<RetrieveCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -961,7 +961,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveCustomer Returns details for a single customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of RetrieveCustomerResponse</returns>
@@ -975,16 +975,16 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveCustomer Returns details for a single customer.
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="IO.Swagger.Client.ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId"></param>
         /// <returns>Task of ApiResponse (RetrieveCustomerResponse)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<RetrieveCustomerResponse>> RetrieveCustomerAsyncWithHttpInfo (string authorization, string customerId)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling RetrieveCustomer");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling RetrieveCustomer");
             // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling RetrieveCustomer");
+            if (customerId == null) throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling RetrieveCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -1031,9 +1031,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<RetrieveCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -1044,7 +1044,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// UpdateCustomer Updates the details of an existing customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId">The customer to update.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
@@ -1058,7 +1058,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// UpdateCustomer Updates the details of an existing customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="customerId">The customer to update.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
@@ -1068,15 +1068,15 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CustomerApi->UpdateCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CustomerApi->UpdateCustomer");
             
             // verify the required parameter 'customerId' is set
             if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->UpdateCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling CustomerApi->UpdateCustomer");
             
             // verify the required parameter 'body' is set
             if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling CustomerApi->UpdateCustomer");
+                throw new ApiV2Exception(400, "Missing required parameter 'body' when calling CustomerApi->UpdateCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -1130,9 +1130,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<UpdateCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -1144,7 +1144,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// UpdateCustomer Updates the details of an existing customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -1159,7 +1159,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// UpdateCustomer Updates the details of an existing customer.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="customerId">The customer to update.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -1167,11 +1167,11 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<UpdateCustomerResponse>> UpdateCustomerAsyncWithHttpInfo (string authorization, string customerId, UpdateCustomerRequest body)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling UpdateCustomer");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling UpdateCustomer");
             // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling UpdateCustomer");
+            if (customerId == null) throw new ApiV2Exception(400, "Missing required parameter 'customerId' when calling UpdateCustomer");
             // verify the required parameter 'body' is set
-            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateCustomer");
+            if (body == null) throw new ApiV2Exception(400, "Missing required parameter 'body' when calling UpdateCustomer");
             
     
             var localVarPath = "/v2/customers/{customer_id}";
@@ -1225,9 +1225,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling UpdateCustomer: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<UpdateCustomerResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),

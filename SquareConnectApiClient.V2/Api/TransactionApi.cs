@@ -21,7 +21,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -34,7 +34,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -47,7 +47,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Charges a card represented by a token.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -60,7 +60,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Charges a card represented by a token.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -73,7 +73,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -89,7 +89,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -105,7 +105,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Retrieves details for a single transaction.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -118,7 +118,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Retrieves details for a single transaction.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -131,7 +131,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -144,7 +144,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -161,7 +161,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -174,7 +174,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -187,7 +187,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Charges a card represented by a token.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -200,7 +200,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Charges a card represented by a token.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -213,7 +213,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -229,7 +229,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -245,7 +245,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Retrieves details for a single transaction.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -258,7 +258,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Retrieves details for a single transaction.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -271,7 +271,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -284,7 +284,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -386,7 +386,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CaptureTransaction Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -400,7 +400,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CaptureTransaction Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -410,15 +410,15 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling TransactionApi->CaptureTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling TransactionApi->CaptureTransaction");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling TransactionApi->CaptureTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling TransactionApi->CaptureTransaction");
             
             // verify the required parameter 'transactionId' is set
             if (transactionId == null)
-                throw new ApiException(400, "Missing required parameter 'transactionId' when calling TransactionApi->CaptureTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling TransactionApi->CaptureTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/capture";
@@ -466,9 +466,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<CaptureTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -480,7 +480,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CaptureTransaction Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -495,7 +495,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CaptureTransaction Captures a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -503,11 +503,11 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<CaptureTransactionResponse>> CaptureTransactionAsyncWithHttpInfo (string authorization, string locationId, string transactionId)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling CaptureTransaction");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CaptureTransaction");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling CaptureTransaction");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling CaptureTransaction");
             // verify the required parameter 'transactionId' is set
-            if (transactionId == null) throw new ApiException(400, "Missing required parameter 'transactionId' when calling CaptureTransaction");
+            if (transactionId == null) throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling CaptureTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/capture";
@@ -555,9 +555,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CaptureTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<CaptureTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -568,7 +568,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// Charge Charges a card represented by a token.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to associate the transaction with.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
@@ -582,7 +582,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// Charge Charges a card represented by a token.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to associate the transaction with.</param> 
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param> 
@@ -592,15 +592,15 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling TransactionApi->Charge");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling TransactionApi->Charge");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling TransactionApi->Charge");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling TransactionApi->Charge");
             
             // verify the required parameter 'body' is set
             if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling TransactionApi->Charge");
+                throw new ApiV2Exception(400, "Missing required parameter 'body' when calling TransactionApi->Charge");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions";
@@ -654,9 +654,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling Charge: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling Charge: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling Charge: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling Charge: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<ChargeResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -668,7 +668,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// Charge Charges a card represented by a token.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -683,7 +683,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// Charge Charges a card represented by a token.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to associate the transaction with.</param>
         /// <param name="body">An object containing the fields to POST for the request.\n\nSee the corresponding object definition for field details.</param>
@@ -691,11 +691,11 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<ChargeResponse>> ChargeAsyncWithHttpInfo (string authorization, string locationId, ChargeRequest body)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling Charge");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling Charge");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling Charge");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling Charge");
             // verify the required parameter 'body' is set
-            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling Charge");
+            if (body == null) throw new ApiV2Exception(400, "Missing required parameter 'body' when calling Charge");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions";
@@ -749,9 +749,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling Charge: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling Charge: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling Charge: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling Charge: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<ChargeResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -762,7 +762,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListTransactions Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to list transactions for.</param> 
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param> 
@@ -779,7 +779,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListTransactions Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to list transactions for.</param> 
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param> 
@@ -792,11 +792,11 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling TransactionApi->ListTransactions");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling TransactionApi->ListTransactions");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling TransactionApi->ListTransactions");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling TransactionApi->ListTransactions");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions";
@@ -847,9 +847,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<ListTransactionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -861,7 +861,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListTransactions Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -879,7 +879,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListTransactions Lists transactions for a particular location.\n\nWhen making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must\ninclude both `begin_time` and `end_time` with an optional `sort_order`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list transactions for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -890,9 +890,9 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<ListTransactionsResponse>> ListTransactionsAsyncWithHttpInfo (string authorization, string locationId, string beginTime = null, string endTime = null, string sortOrder = null, string cursor = null)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling ListTransactions");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling ListTransactions");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling ListTransactions");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling ListTransactions");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions";
@@ -943,9 +943,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListTransactions: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<ListTransactionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -956,7 +956,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveTransaction Retrieves details for a single transaction.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -970,7 +970,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveTransaction Retrieves details for a single transaction.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -980,15 +980,15 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling TransactionApi->RetrieveTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling TransactionApi->RetrieveTransaction");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling TransactionApi->RetrieveTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling TransactionApi->RetrieveTransaction");
             
             // verify the required parameter 'transactionId' is set
             if (transactionId == null)
-                throw new ApiException(400, "Missing required parameter 'transactionId' when calling TransactionApi->RetrieveTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling TransactionApi->RetrieveTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}";
@@ -1036,9 +1036,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<RetrieveTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -1050,7 +1050,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveTransaction Retrieves details for a single transaction.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -1065,7 +1065,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// RetrieveTransaction Retrieves details for a single transaction.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -1073,11 +1073,11 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<RetrieveTransactionResponse>> RetrieveTransactionAsyncWithHttpInfo (string authorization, string locationId, string transactionId)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling RetrieveTransaction");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling RetrieveTransaction");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling RetrieveTransaction");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling RetrieveTransaction");
             // verify the required parameter 'transactionId' is set
-            if (transactionId == null) throw new ApiException(400, "Missing required parameter 'transactionId' when calling RetrieveTransaction");
+            if (transactionId == null) throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling RetrieveTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}";
@@ -1125,9 +1125,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling RetrieveTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<RetrieveTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -1138,7 +1138,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// VoidTransaction Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -1152,7 +1152,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// VoidTransaction Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId"></param> 
         /// <param name="transactionId"></param> 
@@ -1162,15 +1162,15 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling TransactionApi->VoidTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling TransactionApi->VoidTransaction");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling TransactionApi->VoidTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling TransactionApi->VoidTransaction");
             
             // verify the required parameter 'transactionId' is set
             if (transactionId == null)
-                throw new ApiException(400, "Missing required parameter 'transactionId' when calling TransactionApi->VoidTransaction");
+                throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling TransactionApi->VoidTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/void";
@@ -1218,9 +1218,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<VoidTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -1232,7 +1232,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// VoidTransaction Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -1247,7 +1247,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// VoidTransaction Cancels a transaction that was created with the **Charge**\nendpoint with a `delay_capture` value of `true`.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId"></param>
         /// <param name="transactionId"></param>
@@ -1255,11 +1255,11 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<VoidTransactionResponse>> VoidTransactionAsyncWithHttpInfo (string authorization, string locationId, string transactionId)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling VoidTransaction");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling VoidTransaction");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling VoidTransaction");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling VoidTransaction");
             // verify the required parameter 'transactionId' is set
-            if (transactionId == null) throw new ApiException(400, "Missing required parameter 'transactionId' when calling VoidTransaction");
+            if (transactionId == null) throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling VoidTransaction");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/void";
@@ -1307,9 +1307,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling VoidTransaction: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<VoidTransactionResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),

@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\ApiV2Exception.cs" />
     <Compile Include="Api\CustomerApi.cs" />
     <Compile Include="Api\CustomerCardApi.cs" />
     <Compile Include="Api\LocationApi.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Model\Error.cs" />
     <Compile Include="Model\ErrorCategory.cs" />
     <Compile Include="Model\ErrorCode.cs" />
+    <Compile Include="Model\ErrorsArray.cs" />
     <Compile Include="Model\ListCustomersRequest.cs" />
     <Compile Include="Model\ListCustomersResponse.cs" />
     <Compile Include="Model\ListLocationsResponse.cs" />

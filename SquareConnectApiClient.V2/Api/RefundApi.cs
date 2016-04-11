@@ -21,7 +21,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Initiates a refund for a previously charged tender.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -35,7 +35,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Initiates a refund for a previously charged tender.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -49,7 +49,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists refunds for one of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -65,7 +65,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists refunds for one of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -85,7 +85,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Initiates a refund for a previously charged tender.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -99,7 +99,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Initiates a refund for a previously charged tender.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -113,7 +113,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists refunds for one of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -129,7 +129,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <remarks>
         /// Lists refunds for one of a business&#39;s locations.
         /// </remarks>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -234,7 +234,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateRefund Initiates a refund for a previously charged tender.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param> 
         /// <param name="transactionId"></param> 
@@ -249,7 +249,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateRefund Initiates a refund for a previously charged tender.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param> 
         /// <param name="transactionId"></param> 
@@ -260,19 +260,19 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling RefundApi->CreateRefund");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling RefundApi->CreateRefund");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling RefundApi->CreateRefund");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling RefundApi->CreateRefund");
             
             // verify the required parameter 'transactionId' is set
             if (transactionId == null)
-                throw new ApiException(400, "Missing required parameter 'transactionId' when calling RefundApi->CreateRefund");
+                throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling RefundApi->CreateRefund");
             
             // verify the required parameter 'body' is set
             if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling RefundApi->CreateRefund");
+                throw new ApiV2Exception(400, "Missing required parameter 'body' when calling RefundApi->CreateRefund");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/refund";
@@ -327,9 +327,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<CreateRefundResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -341,7 +341,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateRefund Initiates a refund for a previously charged tender.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -357,7 +357,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// CreateRefund Initiates a refund for a previously charged tender.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the original transaction&#39;s associated location.</param>
         /// <param name="transactionId"></param>
@@ -366,13 +366,13 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<CreateRefundResponse>> CreateRefundAsyncWithHttpInfo (string authorization, string locationId, string transactionId, CreateRefundRequest body)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling CreateRefund");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling CreateRefund");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling CreateRefund");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling CreateRefund");
             // verify the required parameter 'transactionId' is set
-            if (transactionId == null) throw new ApiException(400, "Missing required parameter 'transactionId' when calling CreateRefund");
+            if (transactionId == null) throw new ApiV2Exception(400, "Missing required parameter 'transactionId' when calling CreateRefund");
             // verify the required parameter 'body' is set
-            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling CreateRefund");
+            if (body == null) throw new ApiV2Exception(400, "Missing required parameter 'body' when calling CreateRefund");
             
     
             var localVarPath = "/v2/locations/{location_id}/transactions/{transaction_id}/refund";
@@ -427,9 +427,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling CreateRefund: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<CreateRefundResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -440,7 +440,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListRefunds Lists refunds for one of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to list refunds for.</param> 
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param> 
@@ -457,7 +457,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListRefunds Lists refunds for one of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param> 
         /// <param name="locationId">The ID of the location to list refunds for.</param> 
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param> 
@@ -470,11 +470,11 @@ namespace SquareConnectApiClient.V2.Api
             
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling RefundApi->ListRefunds");
+                throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling RefundApi->ListRefunds");
             
             // verify the required parameter 'locationId' is set
             if (locationId == null)
-                throw new ApiException(400, "Missing required parameter 'locationId' when calling RefundApi->ListRefunds");
+                throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling RefundApi->ListRefunds");
             
     
             var localVarPath = "/v2/locations/{location_id}/refunds";
@@ -525,9 +525,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             return new ApiResponse<ListRefundsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
@@ -539,7 +539,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListRefunds Lists refunds for one of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -557,7 +557,7 @@ namespace SquareConnectApiClient.V2.Api
         /// <summary>
         /// ListRefunds Lists refunds for one of a business&#39;s locations.
         /// </summary>
-        /// <exception cref="ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="ApiV2Exception">Thrown when fails to make API call</exception>
         /// <param name="authorization">The value to provide in the Authorization header of\nyour request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`.</param>
         /// <param name="locationId">The ID of the location to list refunds for.</param>
         /// <param name="beginTime">The beginning of the requested reporting period, in RFC 3339 format. (optional)</param>
@@ -568,9 +568,9 @@ namespace SquareConnectApiClient.V2.Api
         public async System.Threading.Tasks.Task<ApiResponse<ListRefundsResponse>> ListRefundsAsyncWithHttpInfo (string authorization, string locationId, string beginTime = null, string endTime = null, string sortOrder = null, string cursor = null)
         {
             // verify the required parameter 'authorization' is set
-            if (authorization == null) throw new ApiException(400, "Missing required parameter 'authorization' when calling ListRefunds");
+            if (authorization == null) throw new ApiV2Exception(400, "Missing required parameter 'authorization' when calling ListRefunds");
             // verify the required parameter 'locationId' is set
-            if (locationId == null) throw new ApiException(400, "Missing required parameter 'locationId' when calling ListRefunds");
+            if (locationId == null) throw new ApiV2Exception(400, "Missing required parameter 'locationId' when calling ListRefunds");
             
     
             var localVarPath = "/v2/locations/{location_id}/refunds";
@@ -621,9 +621,9 @@ namespace SquareConnectApiClient.V2.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiV2Exception (localVarStatusCode, "Error calling ListRefunds: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<ListRefundsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
