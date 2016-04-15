@@ -3,9 +3,14 @@
 https://docs.connect.squareup.com/api/connect/v2
 
 
-Client code was generated with https://generator.swagger.io, so it supports all endpoints and operations listed in documentation
+Client code was generated with https://generator.swagger.io, so it supports all endpoints and operations listed in documentation. 
 
-Also supports Authorization API operations ObtainToken and RenewToken from Connect API v1
+List of endpoints can be found here: https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints
+
+For each endpoint there is a class, like for Transaction endpoint there is Transaction**Api** class.
+
+
+Also supports Authorization API operations ObtainToken and RenewToken from Connect API v1 (AuthorizationApi class)
 
 https://docs.connect.squareup.com/api/connect/v1/#navsection-authorization
 
